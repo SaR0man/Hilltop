@@ -67,5 +67,6 @@ class HawaiianPizzaBuilder implements PizzaBuilder {
 public class Main {
     public static void main(String[] args) {
         System.out.println("Проверяем кириллицу в консоли");
+        System.out.println("Еще проверка"); // такой комментарий
     }
 }
