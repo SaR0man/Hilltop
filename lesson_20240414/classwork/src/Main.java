@@ -40,7 +40,7 @@ interface PizzaBuilder {
     Pizza getPizza();
 }
 
-//// класс для создания конкретной пиццы -- гавайской:
+//// класс для создания конкретной пиццы -- Гавайской:
 class HawaiianPizzaBuilder implements PizzaBuilder {
 
     private Pizza pizza = new Pizza();
@@ -58,6 +58,32 @@ class HawaiianPizzaBuilder implements PizzaBuilder {
     @Override
     public void buildIngredient() {
         pizza.setIngredient("Ветчина");
+    }
+
+    @Override
+    public Pizza getPizza() {
+        return pizza;
+    }
+}
+
+//// класс для создания конкретной пиццы -- Маргарита:
+class MargheritaPizzaBuilder implements PizzaBuilder {
+
+    private Pizza pizza = new Pizza();
+
+    @Override
+    public void buildDough() {
+        pizza.setDough("Среднее");
+    }
+
+    @Override
+    public void buildSauce() {
+        pizza.setSauce("Сырный");
+    }
+
+    @Override
+    public void buildIngredient() {
+        pizza.setIngredient("Томаты");
     }
 
     @Override
@@ -89,9 +115,14 @@ class Director {
 public class Main {
     public static void main(String[] args) {
         Director director = new Director();
-        PizzaBuilder pizzaBuilder = new HawaiianPizzaBuilder();
+
+        PizzaBuilder pizzaBuilder = new HawaiianPizzaBuilder();  // делаем Гавайскую пиццу
+//        PizzaBuilder pizzaBuilder = new MargheritaPizzaBuilder();  // делаем пиццу Маргарита
+
         director.setPizzaBuilder(pizzaBuilder);
+
         Pizza pizza = director.getPizza();
+
         System.out.println(pizza);
     }
 }
