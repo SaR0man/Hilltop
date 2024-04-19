@@ -43,24 +43,42 @@ interface PizzaBuilder {
 //// класс для создания конкретной пиццы -- гавайской:
 class HawaiianPizzaBuilder implements PizzaBuilder {
 
+    private Pizza pizza = new Pizza();
+
     @Override
     public void buildDough() {
-
+        pizza.setDough("Тонкое");
     }
 
     @Override
     public void buildSauce() {
-
+        pizza.setSauce("Томатный");
     }
 
     @Override
     public void buildIngredient() {
-
+        pizza.setIngredient("Ветчина");
     }
 
     @Override
     public Pizza getPizza() {
-        return null;
+        return pizza;
+    }
+}
+
+class Director {
+    private PizzaBuilder pizzaBuilder;
+
+    public void setPizzaBuilder(PizzaBuilder pizzaBuilder) {
+        this.pizzaBuilder = pizzaBuilder;
+    }
+
+    public Pizza getPizza() {
+        return pizzaBuilder.getPizza();
+    }
+
+    private void createPizza() {
+
     }
 }
 
