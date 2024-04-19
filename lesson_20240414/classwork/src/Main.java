@@ -66,6 +66,7 @@ class HawaiianPizzaBuilder implements PizzaBuilder {
     }
 }
 
+//// Класс "Директор"
 class Director {
     private PizzaBuilder pizzaBuilder;
 
@@ -74,17 +75,23 @@ class Director {
     }
 
     public Pizza getPizza() {
+        createPizza();
         return pizzaBuilder.getPizza();
     }
 
     private void createPizza() {
-
+        pizzaBuilder.buildDough();
+        pizzaBuilder.buildSauce();
+        pizzaBuilder.buildIngredient();
     }
 }
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Проверяем кириллицу в консоли");
-        System.out.println("Еще проверка"); // такой комментарий
+        Director director = new Director();
+        PizzaBuilder pizzaBuilder = new HawaiianPizzaBuilder();
+        director.setPizzaBuilder(pizzaBuilder);
+        Pizza pizza = director.getPizza();
+        System.out.println(pizza);
     }
 }
