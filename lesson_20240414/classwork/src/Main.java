@@ -29,7 +29,7 @@ class Pizza {
 
     @Override
     public String toString() {
-        return "Пицца с тестом: " + dough + ", соус: " + sauce + " и начинкой: " + ingredient;
+        return "РџРёС†С†Р° СЃ С‚РµСЃС‚РѕРј: " + dough + ", СЃРѕСѓСЃ: " + sauce + " Рё РЅР°С‡РёРЅРєРѕР№: " + ingredient;
     }
 }
 
@@ -40,24 +40,24 @@ interface PizzaBuilder {
     Pizza getPizza();
 }
 
-//// класс для создания конкретной пиццы -- Гавайской:
+//// РєР»Р°СЃСЃ РґР»СЏ СЃРѕР·РґР°РЅРёСЏ РєРѕРЅРєСЂРµС‚РЅРѕР№ РїРёС†С†С‹ -- Р“Р°РІР°Р№СЃРєРѕР№:
 class HawaiianPizzaBuilder implements PizzaBuilder {
 
     private Pizza pizza = new Pizza();
 
     @Override
     public void buildDough() {
-        pizza.setDough("Тонкое");
+        pizza.setDough("РўРѕРЅРєРѕРµ");
     }
 
     @Override
     public void buildSauce() {
-        pizza.setSauce("Томатный");
+        pizza.setSauce("РўРѕРјР°С‚РЅС‹Р№");
     }
 
     @Override
     public void buildIngredient() {
-        pizza.setIngredient("Ветчина");
+        pizza.setIngredient("Р’РµС‚С‡РёРЅР°");
     }
 
     @Override
@@ -66,24 +66,24 @@ class HawaiianPizzaBuilder implements PizzaBuilder {
     }
 }
 
-//// класс для создания конкретной пиццы -- Маргарита:
+//// РєР»Р°СЃСЃ РґР»СЏ СЃРѕР·РґР°РЅРёСЏ РєРѕРЅРєСЂРµС‚РЅРѕР№ РїРёС†С†С‹ -- РњР°СЂРіР°СЂРёС‚Р°:
 class MargheritaPizzaBuilder implements PizzaBuilder {
 
     private Pizza pizza = new Pizza();
 
     @Override
     public void buildDough() {
-        pizza.setDough("Среднее");
+        pizza.setDough("РЎСЂРµРґРЅРµРµ");
     }
 
     @Override
     public void buildSauce() {
-        pizza.setSauce("Сырный");
+        pizza.setSauce("РЎС‹СЂРЅС‹Р№");
     }
 
     @Override
     public void buildIngredient() {
-        pizza.setIngredient("Томаты");
+        pizza.setIngredient("РўРѕРјР°С‚С‹");
     }
 
     @Override
@@ -92,7 +92,7 @@ class MargheritaPizzaBuilder implements PizzaBuilder {
     }
 }
 
-//// Класс "Директор"
+//// РљР»Р°СЃСЃ "Р”РёСЂРµРєС‚РѕСЂ"
 class Director {
     private PizzaBuilder pizzaBuilder;
 
@@ -116,8 +116,8 @@ public class Main {
     public static void main(String[] args) {
         Director director = new Director();
 
-        PizzaBuilder pizzaBuilder = new HawaiianPizzaBuilder();  // делаем Гавайскую пиццу
-//        PizzaBuilder pizzaBuilder = new MargheritaPizzaBuilder();  // делаем пиццу Маргарита
+        PizzaBuilder pizzaBuilder = new HawaiianPizzaBuilder();  // РґРµР»Р°РµРј Р“Р°РІР°Р№СЃРєСѓСЋ РїРёС†С†Сѓ
+//        PizzaBuilder pizzaBuilder = new MargheritaPizzaBuilder();  // РґРµР»Р°РµРј РїРёС†С†Сѓ РњР°СЂРіР°СЂРёС‚Р°
 
         director.setPizzaBuilder(pizzaBuilder);
 
