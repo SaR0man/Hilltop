@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="84880788-d14d-481c-b0de-3679950a0a6e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classwork_v2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classwork_v2/HawaianPizzaBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classwork_v2/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classwork_v2/MargheritaPizzaBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classwork_v2/Pizza.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classwork_v2/PizzaBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classwork_v2/Waiter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson_20240421/classwork_1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson_20240421/classwork_1/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson_20240421/classwork_1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson_20240421/classwork_1/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson_20240421/classwork_1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson_20240421/classwork_1/classwork_1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson_20240421/classwork_1/out/production/classwork_1/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson_20240421/classwork_1/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classwork/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../classwork/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classwork/out/production/classwork/Director.class" beforeDir="false" afterPath="$PROJECT_DIR$/../classwork/out/production/classwork/Director.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classwork/out/production/classwork/HawaiianPizzaBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../classwork/out/production/classwork/HawaiianPizzaBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classwork/out/production/classwork/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../classwork/out/production/classwork/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classwork/out/production/classwork/MargheritaPizzaBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../classwork/out/production/classwork/MargheritaPizzaBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classwork/out/production/classwork/Pizza.class" beforeDir="false" afterPath="$PROJECT_DIR$/../classwork/out/production/classwork/Pizza.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../classwork/out/production/classwork/PizzaBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../classwork/out/production/classwork/PizzaBuilder.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectId" id="2fNXQF8W4C0gkMAMlLIlLaCLzIO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="classwork_v2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="84880788-d14d-481c-b0de-3679950a0a6e" name="Changes" comment="" />
+      <created>1713642492878</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1713642492878</updated>
+      <workItem from="1713642494592" duration="1587000" />
+      <workItem from="1713679507887" duration="4011000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
