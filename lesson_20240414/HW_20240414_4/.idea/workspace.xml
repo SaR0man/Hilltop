@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fad0faa7-4652-4c60-b24d-623e904afcaa" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../CW_20240414_2/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CW_20240414_2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CW_20240414_2/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_20240414_2/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_20240414_2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_20240414_2/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_20240414_2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_20240414_2/HW_20240414_2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_20240414_2/out/production/HW_20240421_1/Chocolate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_20240414_2/out/production/HW_20240421_1/Coffee.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_20240414_2/out/production/HW_20240421_1/CoffeeDecorator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_20240414_2/out/production/HW_20240421_1/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_20240414_2/out/production/HW_20240421_1/Milk.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_20240414_2/out/production/HW_20240421_1/SimpleCoffee.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_20240414_2/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW_20240414_4.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/HW_20240414_4/Client.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_20240421_2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_20240421_2/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_20240421_2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_20240421_2/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_20240421_2/HW_20240421_2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_20240421_2/src/ProxyPatternExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_20240421_3/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_20240421_3/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_20240421_3/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_20240421_3/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_20240421_3/HW_20240414_3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_20240421_3/out/production/HW_20240414_3/Computer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_20240421_3/out/production/HW_20240414_3/Headphones.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_20240421_3/out/production/HW_20240414_3/JackDevice.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_20240421_3/out/production/HW_20240414_3/JackToUSBAdapter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_20240421_3/out/production/HW_20240414_3/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_20240421_3/out/production/HW_20240414_3/USBDevice.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW_20240421_3/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson_20240421/HW_20240421_1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lesson_20240421/HW_20240421_1/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson_20240421/CW_20240414_2/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../CW_20240414_2/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson_20240421/CW_20240414_2/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lesson_20240421/CW_20240414_2/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson_20240421/CW_20240414_2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lesson_20240421/CW_20240414_2/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson_20240421/CW_20240414_2/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lesson_20240421/CW_20240414_2/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson_20240421/CW_20240414_2/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CW_20240414_2/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson_20240421/CW_20240414_2/CW_20240414_2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../CW_20240414_2/CW_20240414_2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson_20240421/CW_20240414_2/out/production/CW_20240414_2/House.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CW_20240414_2/out/production/CW_20240414_2/House.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson_20240421/CW_20240414_2/out/production/CW_20240414_2/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CW_20240414_2/out/production/CW_20240414_2/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson_20240421/CW_20240414_2/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CW_20240414_2/src/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2fT6BKkGyRM82mTz9ITXZUFTsqe" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Client" />
+      <module name="HW_20240414_4" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Client" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fad0faa7-4652-4c60-b24d-623e904afcaa" name="Changes" comment="" />
+      <created>1713812585384</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1713812585384</updated>
+      <workItem from="1713812587003" duration="1014000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

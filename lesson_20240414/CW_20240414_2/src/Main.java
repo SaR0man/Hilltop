@@ -1,5 +1,3 @@
-import java.util.StringJoiner;
-
 class House {
     private int doorCount;
     private int windowCount;
