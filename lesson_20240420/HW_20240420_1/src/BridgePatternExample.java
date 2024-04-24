@@ -1,4 +1,8 @@
 // Интерфейс устройства
+/*
+Определяет общий интерфейс для всех устройств, которыми можно управлять с помощью пультов.
+Он содержит методы для получения и установки состояния (включено/выключено, громкость, канал).
+ */
 interface Device {
     boolean isEnabled();
     void enable();
@@ -9,6 +13,11 @@ interface Device {
     void setChannel(int channel);
 }
 
+/*
+Классы Tv и Radio:
+Реализуют интерфейс Device для конкретных устройств - телевизора и радио соответственно.
+Они имеют свои собственные переменные состояния (включено/выключено, громкость, канал) и методы для их изменения.
+ */
 // Класс ТВ, реализующий устройство
 class Tv implements Device {
     private boolean enabled = false;
@@ -98,6 +107,10 @@ class Radio implements Device {
 }
 
 // Класс пультов
+/*
+Это базовый класс для пультов, который имеет ссылку на устройство (Device), которым он управляет.
+Он содержит методы для базового управления устройством, такие как включение/выключение, регулировка громкости и изменение канала.
+ */
 class Remote {
     protected Device device;
 
@@ -131,6 +144,9 @@ class Remote {
 }
 
 // Расширение класса пультов
+/*
+Это расширение класса Remote, которое добавляет дополнительные функции, такие как режим "без звука" (mute).
+ */
 class AdvancedRemote extends Remote {
     public AdvancedRemote(Device device) {
         super(device);
@@ -144,7 +160,7 @@ class AdvancedRemote extends Remote {
 // Пример использования
 public class BridgePatternExample {
     public static void main(String[] args) {
-        // Create a TV and a remote for it
+        // Создаем ТВ и пульт для него
         Tv tv = new Tv();
         Remote remote = new Remote(tv);
 
@@ -156,7 +172,7 @@ public class BridgePatternExample {
         remote.channelUp();
         System.out.println("Channel: " + tv.getChannel());
 
-        // Create a radio and an advanced remote for it
+        // Создаем радио и продвинутый пульт для него
         Radio radio = new Radio();
         AdvancedRemote advancedRemote = new AdvancedRemote(radio);
 
@@ -169,4 +185,3 @@ public class BridgePatternExample {
         System.out.println("Radio muted, volume: " + radio.getVolume());
     }
 }
-
