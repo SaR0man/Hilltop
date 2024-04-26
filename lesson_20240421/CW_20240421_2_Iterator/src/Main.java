@@ -1,10 +1,12 @@
-interface IteratorPatern<T>{
+interface IteratorPatern<T> {
     boolean hasNext();
+
     T next();
+
     void clear();
 }
 
-class StringListIterator implements IteratorPatern<String>{
+class StringListIterator implements IteratorPatern<String> {
     private String[] array;
     private int position = 0;
 
@@ -14,8 +16,8 @@ class StringListIterator implements IteratorPatern<String>{
 
     @Override
     public boolean hasNext() {
-        boolean result =  position<array.length;
-        if (result==false){
+        boolean result = position < array.length;
+        if (result == false) {
             clear();
         }
         return result;
@@ -23,7 +25,7 @@ class StringListIterator implements IteratorPatern<String>{
 
     @Override
     public String next() {
-        if (this.hasNext()){
+        if (this.hasNext()) {
             return array[position++];//2
         }
         return null;
@@ -37,35 +39,15 @@ class StringListIterator implements IteratorPatern<String>{
 
 public class Main {
     public static void main(String[] args) {
-        String[] array = {"Farid","Abdullayev" };
+        String[] array = {"Farid", "Abdullayev"};
         StringListIterator stringListIterator = new StringListIterator(array);
 
-        while (stringListIterator.hasNext()){
+        while (stringListIterator.hasNext()) {
             String item = stringListIterator.next();
             System.out.println(item);
         }
 
-        while (stringListIterator.hasNext()){
-            String item = stringListIterator.next();
-            System.out.println(item);
-        }
-
-        while (stringListIterator.hasNext()){
-            String item = stringListIterator.next();
-            System.out.println(item);
-        }
-
-        while (stringListIterator.hasNext()){
-            String item = stringListIterator.next();
-            System.out.println(item);
-        }
-
-        while (stringListIterator.hasNext()){
-            String item = stringListIterator.next();
-            System.out.println(item);
-        }
-
-        while (stringListIterator.hasNext()){
+        while (stringListIterator.hasNext()) {
             String item = stringListIterator.next();
             System.out.println(item);
         }
