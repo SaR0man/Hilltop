@@ -9,7 +9,7 @@ public class Main {
         String birthday = scanner.next();
 
         Pattern pattern = Pattern.compile(birthday);
-        Matcher matcher = pattern.matcher();
+//        Matcher matcher = pattern.matcher();
 
 
         System.out.println("Hello world!");
