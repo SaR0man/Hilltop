@@ -2,6 +2,11 @@ import java.util.Scanner;
 
 public class Main {
     public static boolean isValidBracketSequence(String str) {
+        // Проверяем длину строки на четность
+        if (str.length() % 2 != 0) {
+            return false;
+        }
+
         int roundBrackets = 0;
         int squareBrackets = 0;
         int curlyBrackets = 0;
@@ -27,7 +32,7 @@ public class Main {
             }
         }
 
-        // Проверяем, что все переменные равны 0
+        // Проверяем, что все открытые скобки закрыты
         return roundBrackets == 0 && squareBrackets == 0 && curlyBrackets == 0;
     }
 
@@ -37,6 +42,10 @@ public class Main {
         System.out.print(">> Enter string to check it for bracket equilibrium:_");
         String userInput = scanner.nextLine();
 
-        System.out.println("Is there a bracket equilibrium? - " + isValidBracketSequence(userInput));
+        if (isValidBracketSequence(userInput)) {
+            System.out.println("The bracket sequence is balanced.");
+        } else {
+            System.out.println("The bracket sequence is not balanced.");
+        }
     }
 }
