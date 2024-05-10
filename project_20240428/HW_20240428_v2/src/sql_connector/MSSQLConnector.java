@@ -6,7 +6,11 @@ public class MSSQLConnector {
     public static void main(String[] args) {
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-            String dburl = "jdbc:sqlserver://localhost;databasename=GrosseryStore;integratedSecurity=true";
+            String dburl = "jdbc:sqlserver://localhost:1433;" +
+                    "databasename=GrosseryStore;" +
+                    "integratedSecurity=true;" +
+                    "encrypt=true;" +
+                    "trustServerCertificate=true;";
 
             Connection connection = DriverManager.getConnection(dburl);
 
