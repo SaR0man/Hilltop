@@ -1,1 +1,9 @@
 v5 -- создание проекта прямо из IDE, без сайта Spring Initializr
+*************
+v6 -- генерим стартовый проект на сайте Spring Initializr
+Используем следующие параметры:
+Project: Maven
+Spring Boot: 3.2.5
+Packaging: Jar
+Java: 17
+Dependencies: Spring Data JPA, Spring Web
