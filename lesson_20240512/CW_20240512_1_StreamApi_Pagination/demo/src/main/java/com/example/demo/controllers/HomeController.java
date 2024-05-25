@@ -2,6 +2,7 @@ package com.example.demo.controllers;
 
 import com.example.demo.models.Movie;
 import com.example.demo.models.ResponseMovieApi;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,13 +18,14 @@ public class HomeController {
 
     private final String apiKey = "5c3f2d56";
     private final String baseUrl = "https://www.omdbapi.com/";
+    @Autowired
+    RestTemplate restTemplate;
 
     @GetMapping("/search")
     public List<Movie> test(String title) {
 
-        RestTemplate restTemplate = new RestTemplate();
 
-        String url = baseUrl + "?apikey=" + apiKey + "&s=" + title + "&page=" ;
+        String url = baseUrl + "?apikey=" + apiKey + "&s=" + title + "&page=";
 
         System.out.println(url);
         ResponseEntity<ResponseMovieApi> response = restTemplate.getForEntity(url + 1, ResponseMovieApi.class);
@@ -31,7 +33,7 @@ public class HomeController {
         int totalResult = 0;
         List<Movie> arr = new ArrayList<>();
 
-        if (response.getStatusCode().is2xxSuccessful()){
+        if (response.getStatusCode().is2xxSuccessful()) {
             ResponseMovieApi result = response.getBody();
 
             totalResult = Integer.parseInt(result.totalResults);//97
@@ -49,7 +51,7 @@ public class HomeController {
                 System.out.println("Request => " + i);
                 response = restTemplate.getForEntity(url + i, ResponseMovieApi.class);
 
-                if (response.getStatusCode().is2xxSuccessful() && result!=null&& result.Search!=null) {
+                if (response.getStatusCode().is2xxSuccessful() && result != null && result.Search != null) {
                     result = response.getBody();
 
 
