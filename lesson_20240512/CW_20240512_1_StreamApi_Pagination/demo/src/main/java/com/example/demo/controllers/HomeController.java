@@ -43,6 +43,7 @@ public class HomeController {
 
             // цикл для первой страницы
             for (int i = 0; i < result.Search.size(); i++) {
+                System.out.println(result.Search.get(i).getTitle());
                 arr.add(result.Search.get(i));
             }
 
@@ -56,7 +57,7 @@ public class HomeController {
 
 
                     for (int j = 0; j < result.Search.size(); j++) {
-//                        System.out.println(result.Search.get(j).Title);
+                        System.out.println(result.Search.get(j).getTitle());
                         arr.add(result.Search.get(j));
                     }
                 }
