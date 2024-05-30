@@ -1,10 +1,10 @@
 package com.example.demo.service;
 
-import com.example.demo.models.Movie;
+import com.example.demo.models.MovieResponse;
 
 import java.util.List;
 
 public interface MovieService {
-    List<Movie> getAllByTitle(String title);
+    MovieResponse getAllByTitle(String title, int page);
 }
 
