@@ -12,6 +12,7 @@ import org.springframework.web.client.RestTemplate;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class MovieServiceImpl implements MovieService {
@@ -26,11 +27,11 @@ public class MovieServiceImpl implements MovieService {
     RestTemplate restTemplate;
 
     @Override
-    public MovieResponse getAllByTitle(String title, int page) {
+    public MovieResponse getAllByTitle(String title, int page, int size) {
 
         String url = baseUrl + "?apikey=" + apiKey + "&s=" + title + "&page=";
 
-        ResponseEntity<ResponseMovieApi> response = restTemplate.getForEntity(url + page, ResponseMovieApi.class);
+        ResponseEntity<ResponseMovieApi> response = restTemplate.getForEntity(url + 1, ResponseMovieApi.class);
         MovieResponse movieResponse = new MovieResponse();
 
         if (response.getStatusCode().is2xxSuccessful()) {
@@ -41,12 +42,40 @@ public class MovieServiceImpl implements MovieService {
             for (int i = 0; i < result.Search.size(); i++) {
                 arr.add(result.Search.get(i));
             }
-            int totalResult = Integer.parseInt(result.totalResults);//97
-            int pages = (int) Math.ceil(totalResult / 10.0);
+
+            int totalResult = Integer.parseInt(result.totalResults);  //97
+            int mSize = (int) Math.ceil(totalResult / 10.0);
+
+            // цикл для последующих страниц
+            for (int i = 2; i <= mSize; i++) {
+                System.out.println("Request => " + i);
+                response = restTemplate.getForEntity(url + i, ResponseMovieApi.class);
+
+                if (response.getStatusCode().is2xxSuccessful() && result != null && result.Search != null) {
+                    result = response.getBody();
+
+
+                    for (int j = 0; j < result.Search.size(); j++) {
+//                        System.out.println(result.Search.get(j).getTitle());
+                        arr.add(result.Search.get(j));
+                    }
+                }
+            }
+
+//            int totalResult = Integer.parseInt(result.totalResults);
+//            int pages = (int) Math.ceil(totalResult / 10.0);
+            int totalPages = (int) Math.ceil(totalResult / (double) size);
+
+//            List<Movie> tmp = new ArrayList<>();
+//            for (int i = size * page - size; i < arr.size() && i < size * page; i++) {
+//                tmp.add(arr.get(i));
+//            }
+
+            arr = arr.stream().skip(size*page-size).limit(size).collect(Collectors.toList());
 
             movieResponse.setMovies(arr);
             movieResponse.setCurrentPage(page);
-            movieResponse.setPages(pages);
+            movieResponse.setPages(totalPages);
         }
 
         return movieResponse;

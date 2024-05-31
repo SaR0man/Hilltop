@@ -20,9 +20,10 @@ public class HomeController {
     @GetMapping("/search")
     public MovieResponse test(
             @RequestParam(value = "title", required = true) String title,
-            @RequestParam(value = "page", defaultValue = "1", required = false) int page
+            @RequestParam(value = "page", defaultValue = "1", required = false) int page,
+            @RequestParam(value = "size", defaultValue = "10", required = false) int size
     ) {
-        System.out.println(page);
-        return movieService.getAllByTitle(title, page);
+        System.out.println("HomeController: sent page - " + page);
+        return movieService.getAllByTitle(title, page, size);
     }
 }
