@@ -62,14 +62,7 @@ public class MovieServiceImpl implements MovieService {
                 }
             }
 
-//            int totalResult = Integer.parseInt(result.totalResults);
-//            int pages = (int) Math.ceil(totalResult / 10.0);
             int totalPages = (int) Math.ceil(totalResult / (double) size);
-
-//            List<Movie> tmp = new ArrayList<>();
-//            for (int i = size * page - size; i < arr.size() && i < size * page; i++) {
-//                tmp.add(arr.get(i));
-//            }
 
             arr = arr.stream().skip(size*page-size).limit(size).collect(Collectors.toList());
 
@@ -81,43 +74,3 @@ public class MovieServiceImpl implements MovieService {
         return movieResponse;
     }
 }
-
-
-//    String url = baseUrl + "?apikey=" + apiKey + "&s=" + title + "&page=";
-//
-//        System.out.println(url);
-//                ResponseEntity<ResponseMovieApi> response = restTemplate.getForEntity(url + 1, ResponseMovieApi.class);
-//
-//        int totalResult = 0;
-//        List<Movie> arr = new ArrayList<>();
-//
-//        if (response.getStatusCode().is2xxSuccessful()) {
-//        ResponseMovieApi result = response.getBody();
-//
-//        totalResult = Integer.parseInt(result.totalResults);//97
-//        int page = (int) Math.ceil(totalResult / 10.0);
-//        System.out.println("Page  : " + page);
-//        System.out.println("Total : " + totalResult);
-//
-//        // цикл для первой страницы
-//        for (int i = 0; i < result.Search.size(); i++) {
-//        System.out.println(result.Search.get(i).getTitle());
-//        arr.add(result.Search.get(i));
-//        }
-//
-//        // цикл для последующих страниц
-//        for (int i = 2; i <= page; i++) {
-//        System.out.println("Request => " + i);
-//        response = restTemplate.getForEntity(url + i, ResponseMovieApi.class);
-//
-//        if (response.getStatusCode().is2xxSuccessful() && result != null && result.Search != null) {
-//        result = response.getBody();
-//
-//
-//        for (int j = 0; j < result.Search.size(); j++) {
-//        System.out.println(result.Search.get(j).getTitle());
-//        arr.add(result.Search.get(j));
-//        }
-//        }
-//        }
-//        }
