@@ -10,7 +10,11 @@
     <bean
             id="testBean"
             class="com.top.springapp.TestBean"
+            scope="prototype"
     >
+        <property name="name" value="Farid"/>
+        <property name="age" value="28"/>
+        <constructor-arg value="Farid"/>
     </bean>
 
 </beans>
