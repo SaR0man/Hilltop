@@ -8,14 +8,6 @@ public class TestBean {
     public TestBean() {
     }
 
-    public void initMethod(){
-
-    }
-
-    public void destroyMethod(){
-
-    }
-
     public TestBean(String name) {
         this.name = name;
     }
@@ -23,6 +15,14 @@ public class TestBean {
     public TestBean(String name, int age) {
         this.name = name;
         this.age = age;
+    }
+
+    public void initMethod(){
+
+    }
+
+    public void destroyMethod(){
+
     }
 
     public int getAge() {
