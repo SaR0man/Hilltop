@@ -26,14 +26,14 @@
             id="musicPlayer"
             class="com.top.springapp.MusicPlayer">
         <constructor-arg ref="classicMusic"/>
+        <property name="name" value="${musicPlayer.name}"/>
+        <property name="volume" value="${musicPlayer.volume}"/>
         <property name="musicList">
             <list>
                 <ref bean="rockMusic"/>
                 <ref bean="classicMusic"/>
             </list>
         </property>
-        <property name="name" value="${musicPlayer.name}"/>
-        <property name="volume" value="${musicPlayer.volume}"/>
     </bean>
 
 </beans>
