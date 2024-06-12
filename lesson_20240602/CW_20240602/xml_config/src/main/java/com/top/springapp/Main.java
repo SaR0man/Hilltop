@@ -7,11 +7,15 @@ public class Main {
 
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 
-        TestBean testBean1 = context.getBean("testBean", TestBean.class);
-        TestBean testBean2 = context.getBean("testBean", TestBean.class);
-        testBean1.setName("Oleq");
+        MusicPlayer musicPlayer = context.getBean("musicPlayer",MusicPlayer.class);
 
-        System.out.println(testBean1.getName());
-        System.out.println(testBean2.getName());
+        musicPlayer.printInfo();
+
+//        TestBean testBean1 = context.getBean("testBean", TestBean.class);
+//        TestBean testBean2 = context.getBean("testBean", TestBean.class);
+//        testBean1.setName("Oleq");
+//
+//        System.out.println(testBean1.getName());
+//        System.out.println(testBean2.getName());
     }
 }
