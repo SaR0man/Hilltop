@@ -5,12 +5,12 @@ import java.util.Date;
 import java.util.List;
 
 public class MoneyResponseApi {
-    private String now;
+    private String now;  // текущая дата
     private String previousDate;
     private String previousURL;
-    private String fullName;
-    private String baseUrl;
-    private int count;
+    private String fullName;  // кто делает запрос
+    private String baseUrl;  // адрес внешнего ресурса
+    private int count;  // сколько монет?
     private Date timestamp;
     private List<Valuta> valute = new ArrayList<>();
 

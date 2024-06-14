@@ -1,12 +1,10 @@
 package com.example.demo.models;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.Date;
 
-public class Response {
+public class Response{
     @JsonProperty("Date")
     public Date date;
     @JsonProperty("PreviousDate")
@@ -19,23 +17,10 @@ public class Response {
     public Valute valute;
 }
 
-// class Val{
-//    @JsonProperty("ID")
-//    public String iD;
-//    @JsonProperty("NumCode")
-//    public String numCode;
-//    @JsonProperty("CharCode")
-//    public String charCode;
-//    @JsonProperty("Nominal")
-//    public int nominal;
-//    @JsonProperty("Name")
-//    public String name;
-//    @JsonProperty("Value")
-//    public double value;
-//    @JsonProperty("Previous")
-//    public double previous;
-//}
-
+// import com.fasterxml.jackson.databind.ObjectMapper; // version 2.11.1
+// import com.fasterxml.jackson.annotation.JsonProperty; // version 2.11.1
+/* ObjectMapper om = new ObjectMapper();
+Root root = om.readValue(myJsonString, Root.class); */
 class AED{
     @JsonProperty("ID")
     public String iD;
@@ -54,6 +39,23 @@ class AED{
 }
 
 class AMD{
+    @JsonProperty("ID")
+    public String iD;
+    @JsonProperty("NumCode")
+    public String numCode;
+    @JsonProperty("CharCode")
+    public String charCode;
+    @JsonProperty("Nominal")
+    public int nominal;
+    @JsonProperty("Name")
+    public String name;
+    @JsonProperty("Value")
+    public double value;
+    @JsonProperty("Previous")
+    public double previous;
+}
+
+class AUD{
     @JsonProperty("ID")
     public String iD;
     @JsonProperty("NumCode")
@@ -461,7 +463,24 @@ class NOK{
     public double previous;
 }
 
- class PLN{
+class NZD{
+    @JsonProperty("ID")
+    public String iD;
+    @JsonProperty("NumCode")
+    public String numCode;
+    @JsonProperty("CharCode")
+    public String charCode;
+    @JsonProperty("Nominal")
+    public int nominal;
+    @JsonProperty("Name")
+    public String name;
+    @JsonProperty("Value")
+    public double value;
+    @JsonProperty("Previous")
+    public double previous;
+}
+
+class PLN{
     @JsonProperty("ID")
     public String iD;
     @JsonProperty("NumCode")
@@ -511,8 +530,6 @@ class RON{
     @JsonProperty("Previous")
     public double previous;
 }
-
-
 
 class RSD{
     @JsonProperty("ID")
@@ -684,9 +701,130 @@ class UZS{
     public double previous;
 }
 
-
+class Valute{
+    @JsonProperty("AUD")
+    public AUD aUD;
+    @JsonProperty("AZN")
+    public AZN aZN;
+    @JsonProperty("GBP")
+    public GBP gBP;
+    @JsonProperty("AMD")
+    public AMD aMD;
+    @JsonProperty("BYN")
+    public BYN bYN;
+    @JsonProperty("BGN")
+    public BGN bGN;
+    @JsonProperty("BRL")
+    public BRL bRL;
+    @JsonProperty("HUF")
+    public HUF hUF;
+    @JsonProperty("VND")
+    public VND vND;
+    @JsonProperty("HKD")
+    public HKD hKD;
+    @JsonProperty("GEL")
+    public GEL gEL;
+    @JsonProperty("DKK")
+    public DKK dKK;
+    @JsonProperty("AED")
+    public AED aED;
+    @JsonProperty("USD")
+    public USD uSD;
+    @JsonProperty("EUR")
+    public EUR eUR;
+    @JsonProperty("EGP")
+    public EGP eGP;
+    @JsonProperty("INR")
+    public INR iNR;
+    @JsonProperty("IDR")
+    public IDR iDR;
+    @JsonProperty("KZT")
+    public KZT kZT;
+    @JsonProperty("CAD")
+    public CAD cAD;
+    @JsonProperty("QAR")
+    public QAR qAR;
+    @JsonProperty("KGS")
+    public KGS kGS;
+    @JsonProperty("CNY")
+    public CNY cNY;
+    @JsonProperty("MDL")
+    public MDL mDL;
+    @JsonProperty("NZD")
+    public NZD nZD;
+    @JsonProperty("NOK")
+    public NOK nOK;
+    @JsonProperty("PLN")
+    public PLN pLN;
+    @JsonProperty("RON")
+    public RON rON;
+    @JsonProperty("XDR")
+    public XDR xDR;
+    @JsonProperty("SGD")
+    public SGD sGD;
+    @JsonProperty("TJS")
+    public TJS tJS;
+    @JsonProperty("THB")
+    public THB tHB;
+    @JsonProperty("TRY")
+    public TRY tRY;
+    @JsonProperty("TMT")
+    public TMT tMT;
+    @JsonProperty("UZS")
+    public UZS uZS;
+    @JsonProperty("UAH")
+    public UAH uAH;
+    @JsonProperty("CZK")
+    public CZK cZK;
+    @JsonProperty("SEK")
+    public SEK sEK;
+    @JsonProperty("CHF")
+    public CHF cHF;
+    @JsonProperty("RSD")
+    public RSD rSD;
+    @JsonProperty("ZAR")
+    public ZAR zAR;
+    @JsonProperty("KRW")
+    public KRW kRW;
+    @JsonProperty("JPY")
+    public JPY jPY;
+}
 
 class VND{
+    @JsonProperty("ID")
+    public String iD;
+    @JsonProperty("NumCode")
+    public String numCode;
+    @JsonProperty("CharCode")
+    public String charCode;
+    @JsonProperty("Nominal")
+    public int nominal;
+    @JsonProperty("Name")
+    public String name;
+    @JsonProperty("Value")
+    public double value;
+    @JsonProperty("Previous")
+    public double previous;
+}
+
+class XDR{
+    @JsonProperty("ID")
+    public String iD;
+    @JsonProperty("NumCode")
+    public String numCode;
+    @JsonProperty("CharCode")
+    public String charCode;
+    @JsonProperty("Nominal")
+    public int nominal;
+    @JsonProperty("Name")
+    public String name;
+    @JsonProperty("Value")
+    public double value;
+    @JsonProperty("Previous")
+    public double previous;
+}
+
+class ZAR{
     @JsonProperty("ID")
     public String iD;
     @JsonProperty("NumCode")
