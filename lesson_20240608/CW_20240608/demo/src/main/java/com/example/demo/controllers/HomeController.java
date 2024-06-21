@@ -31,7 +31,10 @@ public class HomeController {
     @GetMapping("/all")
     public List<Person> getAll(HttpServletRequest request) {
         logger.info("/all => " + CommonUtil.getIp(request) + " : " + LocalDateTime.now());
-        historyServices.addIp(CommonUtil.getIp(request));
+//        historyServices.addIp(CommonUtil.getIp(request));
+        if (!historyServices.addIp(CommonUtil.getIp(request))) {
+            return null;
+        }
         return personServices.getAll();
     }
 
@@ -42,7 +45,7 @@ public class HomeController {
         return personServices.getById(id);
     }
 
-    @GetMapping
+    @GetMapping("/info")
     public Map info() {
         return (Map) historyServices.getInfo();
     }
