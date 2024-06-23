@@ -28,7 +28,7 @@ public class HistoryServices {
             count++;
             history.put(ip, count);
 
-            if (count>10) {
+            if (count>5) {
                 return false;
             }
         } else {

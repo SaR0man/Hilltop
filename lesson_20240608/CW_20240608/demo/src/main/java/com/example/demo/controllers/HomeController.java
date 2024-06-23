@@ -29,9 +29,8 @@ public class HomeController {
     HistoryServices historyServices;
 
     @GetMapping("/all")
-    public List<Person> getAll(HttpServletRequest request) {
+    public List<Person> getAll(HttpServletRequest request) throws Exception {
         logger.info("/all => " + CommonUtil.getIp(request) + " : " + LocalDateTime.now());
-//        historyServices.addIp(CommonUtil.getIp(request));
         if (!historyServices.addIp(CommonUtil.getIp(request))) {
             return null;
         }
