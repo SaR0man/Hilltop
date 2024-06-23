@@ -17,16 +17,13 @@ public class MyFilter implements Filter {
 
         System.out.print("Request " + request.getRemoteAddr() + " time : " + LocalTime.now());
         if (request.getHeader("apiKey") == null || !request.getHeader("apiKey").equals("secret12345")) {
-//                     throw new Exception("Api key not correct");{
             servletResponse.getWriter().write("Api key not correct");
-            System.out.println(" OTKAZANO");
+            System.out.println(" access denied (отказано в доступе)");
 
         }else{
-            System.out.println(" DOPUWEN");
+            System.out.println(" access received (доступ получен)");
             filterChain.doFilter(servletRequest,servletResponse);
         }
-
-
     }
 
 //    @Override
