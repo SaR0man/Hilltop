@@ -4,6 +4,7 @@ import com.example.demo_api.entities.Book;
 import com.example.demo_api.services.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -20,9 +21,16 @@ public class BookController {
     }
 
     @GetMapping
-    public List<Book> getAllBooks() {
-        List<Book> books = bookService.getAllBooks();
-        books.forEach(book -> System.out.println(book.getName()));
-        return bookService.getAllBooks();
+    public Object getAllBooks(@RequestHeader(value = "apiKey", required = false) String apiKey) {
+        if (apiKey == null) {
+            return "You don't have access.";
+        }
+
+        List<Book> books = bookService.getBooksByApiKey(apiKey);
+        if (books == null) {
+            return bookService.getRemainingBlockTime(apiKey);
+        } else {
+            return books;
+        }
     }
 }
